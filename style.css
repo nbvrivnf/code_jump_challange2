@@ -1,0 +1,311 @@
+ul li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.topic-text {
+  padding: 0 1.5rem;
+}
+
+.topic-text::after {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background-color: #000;
+  display: block;
+}
+
+.nav button {
+  background-color: white;
+}
+
+img {
+  width: 100%;
+}
+
+/*       main      */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/*   mainvisual   */
+
+.mainvisual_img {
+  width: 100%;
+  height: calc(100vh - 80px);
+  object-fit: cover;
+}
+
+.mainvisual {
+  margin-bottom: 2rem;
+}
+
+
+
+/*     news        */
+.news {
+  display: grid;
+  gap: 2rem;
+}
+
+.news span {
+  background-color: #000;
+  color: white;
+}
+
+.news ul li {
+  margin: 1.5rem 0;
+}
+
+
+/*      About                */
+.About {
+  display: grid;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+.About div:nth-child(3) {
+  padding: 0 1.5rem;
+}
+
+.About img {
+  max-width: 100%;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.About_text {
+  padding: 0 1.5rem;
+}
+
+.About_text span {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background-color: #000;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+/*     Business       */
+.Business {
+  display: block;
+}
+
+.Business-text {
+  margin-bottom: 3rem;
+}
+
+.left-items,
+.rigth-items {
+  padding: 0 1rem;
+}
+
+.left-items p,
+.rigth-items p {
+  font-weight: bold;
+}
+
+
+.left-items img,
+.rigth-items img {
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+
+
+
+/*    Company        */
+.Company {
+  height: auto;
+  position: static;
+}
+.Company div:nth-child(1) {
+  width: 100%;
+  padding: 40px 20px;
+  margin-bottom: 20px;
+  position: static;
+}
+.Company div:nth-child(2) {
+  width: 100%;
+  padding: 20px;
+  position: static;
+}
+.Company div:nth-child(2) img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.after,
+.Company h1 {
+  padding: 0 1.5rem;
+}
+
+.after::after {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background-color: #000;
+  display: block;
+  margin-top: 20px;
+}
+
+
+.Company li {
+  font-weight: bold;
+}
+
+
+
+
+/*      footer       */
+.Footer_flex h1 {
+  padding-left: 20px;
+}
+
+
+
+.copyright {
+  font-size: 0.625rem;
+}
+
+
+@media screen and (min-width:900px) {
+  .news {
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .news ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .news li:nth-child(1),
+  .news li:nth-child(2) {
+    width: calc(100% / 3);
+    border-right: solid 1px #000;
+    padding: 10px 20px;
+  }
+
+  /*   About*/
+
+  .About {
+    display: flex;
+    margin-bottom: 120px;
+  }
+
+  .About div:nth-child(1) {
+    width: 55%;
+  }
+
+  .About div:nth-child(1) img {
+    width: 100%;
+    height: calc(50vh - 80px);
+    object-fit: cover;
+  }
+
+  .About_text {
+    width: 45%;
+    padding: 180px 5% 0 5%;
+  }
+
+  /*  Business   */
+
+  .Business {
+    width: 100%;
+    max-width: 1032px;
+    padding: 0 16px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+  }
+
+
+  .items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+  }
+
+  .right,
+  .left {
+    width: 46%;
+  }
+
+  .left {
+    margin-top: 100px;
+  }
+
+  /*    company      */
+
+  .Company {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1032px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+  .Company div:nth-child(1) {
+    width: 55%;
+    background-color: #fff;
+    padding: 100px 8% 100px 6%;
+    top: 0;
+    left: 0;
+  }
+  .Company div:nth-child(2) {
+    width: 53%;
+    top: 115px;
+    right: 0;
+  }
+  .Company div:nth-child(2) img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  /*Footer*/
+
+  /*   footer_img      */
+  footer {
+    margin-top: 100px;
+    padding: 0 50px;
+  }
+
+  footer::before {
+    content: "";
+    max-width: 100%;
+    height: 1px;
+    background-color: #000;
+    display: block;
+  }
+
+  .Footer_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+
+}
