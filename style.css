@@ -173,7 +173,14 @@ main {
 .Footer_flex h1 {
   padding-left: 20px;
 }
-
+footer span::before {
+  content: "";
+  max-width: 100%;
+  height: 1px;
+  background-color: #000;
+  display: block;
+  margin-bottom:  2rem;
+}
 
 
 .copyright {
@@ -290,12 +297,14 @@ main {
     padding: 0 50px;
   }
 
-  footer::before {
+
+    footer span::before {
     content: "";
     max-width: 100%;
     height: 1px;
     background-color: #000;
     display: block;
+    margin-bottom: 2rem;
   }
 
   .Footer_flex {
